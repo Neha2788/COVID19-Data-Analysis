@@ -238,7 +238,7 @@ def top20():
 
 
 def datewise():
-    df=pd.read_csv(r"C:\Users\ADMIN\Desktop\COVID19 project\covid_19_india.csv")
+    df=pd.read_csv(r"covid_19_india.csv")
     df.drop(["Sno","Time","ConfirmedIndianNational","ConfirmedForeignNational"],axis=1, inplace = True)
     df.groupby(['State/UnionTerritory']) 
     covid19_Mah = df[df['State/UnionTerritory'] == "Maharashtra"]
